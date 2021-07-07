@@ -3,7 +3,7 @@ FROM node:alpine
 
 RUN npm install -g npm@7.19.1
 WORKDIR /Users/Sarkis_Kozan_Oghli/Desktop/simpleweb
-COPY . ./
+COPY ./ ./
 # Install some dependencies
 RUN npm i
 
