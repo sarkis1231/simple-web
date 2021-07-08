@@ -5,10 +5,11 @@ FROM node:alpine
 RUN npm install -g npm@7.19.1
 
 WORKDIR /usr/app
-COPY ./ ./
 
 # Install some dependencies
+COPY ./package.json ./ 
 RUN npm i
+COPY ./ ./
 
 EXPOSE 8080
 
